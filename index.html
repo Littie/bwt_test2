@@ -57,9 +57,35 @@
 
 	<div class="container bottom-line">
 		<div class="row">
-			<div class="col-xs-12 col-sm-2 logo">
-				<img src="images/logo.png">
+			<div class="col-xs-6 col-sm-2 logo">
+				<img src="images/big-logo.png">
 			</div>
+			<!-- Second cart. Visible on xs display -->
+			<div class="col-xs-4 visible-xs-block col-sm-3 col-md-3 col-lg-3 cart">
+				<table class="table table-bordered">
+					<tbody>
+						<tr class="your-cart">
+							<td colspan=2>
+								<ul class="nav navbar-nav">
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Your
+											cart<span class="caret cart-list-caret"></span></a>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="#">Submenu</a></li>
+											</ul>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="cart-info">
+								<td>
+									<a href="#"><i class="ic-cart"></i></a>
+									<a href="#"><span class="cart-items">0 items | $1</span></a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			<div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 nav-menu">
 				<nav role="navigation" class="navbar navbar-default navbar-static-top menu">
 					<div class="navbar-header">
@@ -69,6 +95,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
+						<span class="navbar-brand">Menu</span>
 					</div>
 					<div class="collapse navbar-collapse" id="top-navbar">
 						<ul class="nav navbar-nav">
@@ -111,7 +138,7 @@
 					</div>
 				</nav>
 			</div>
-			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 cart">
+			<div class="col-xs-6 hidden-xs col-sm-3 col-md-3 col-lg-3 cart">
 				<table class="table table-bordered">
 					<tbody>
 						<tr>

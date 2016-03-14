@@ -105,18 +105,18 @@ span.phone {
 
 /* @media 560px to 639px */
 
-@media screen and (min-width: 560px) and (max-width: 639px) {
-	i[class*="ic-"] {
+@media screen and (max-width: 639px) {
+	.h-top-line i[class*="ic-"] {
 		background: url("../images/b-sprite.png") no-repeat;
 	}
 
-	i.ic-user {
+	.h-top-line i.ic-user {
 		width: 39px;
 		height: 45px;
 		background-position: 0 0;
 	}
 
-	i.ic-loop {
+	.h-top-line i.ic-loop {
 		width: 39px;
 		height: 39px;
 		background-position: -39px 0;
@@ -137,9 +137,12 @@ span.phone {
 		display: block;
 	}
 
+	.h-top-line .navbar-collapse {
+		box-shadow: none;
+	}
+
 	span.phone {
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding: 30px 0;
 		background-color: #ffffff;
 		text-align: center;
 		color: #838383;
@@ -172,42 +175,12 @@ span.phone {
 /* @media 320px to 559px */
 
 @media screen and (max-width: 559px) {
-	i[class*="ic-"] {
-		background: url("../images/b-sprite.png") no-repeat;
-	}
-
-	i.ic-user {
-		width: 39px;
-		height: 45px;
-		background-position: 0 0;
-	}
-
-	i.ic-loop {
-		width: 39px;
-		height: 39px;
-		background-position: -39px 0;
-	}
-
 	.h-top-line {
-		padding-left: 0px;
-		padding-right: 0px;
 		font-size: 16px;
-		text-align: center;
-	}
-
-	.h-top-line .col-xs-6 {
-    	width: 100%;
-	}
-
-	.h-top-line .collapse {
-		display: block;
 	}
 
 	span.phone {
-		padding: 15px auto;
-		background-color: #ffffff;
-		text-align: center;
-		color: #838383;
+		padding: 15px 0;
 	}	
 
 	.lang-list {
@@ -229,10 +202,6 @@ span.phone {
 		padding-top: 20px;
 	}
 
-	.account {
-		float: none;
-	}
-
 	.account a {
 		padding: 0;
 	}
@@ -252,6 +221,12 @@ span.phone {
 
 .bottom-line .logo {
 	margin: 42px auto;
+
+}
+
+.bottom-line .logo > img {
+	width: 120px;
+	height: 22px;
 }
 
 .bottom-line .nav-menu {
@@ -277,6 +252,10 @@ span.phone {
 	background-color: #ffffff;
 }
 
+.bottom-line .nav-menu .navbar-brand {
+	display: none;
+}
+
 .bottom-line .cart .table {
 	margin-top: 20px;
 	margin-bottom: 0;
@@ -295,6 +274,9 @@ span.phone {
     width: 100%;
 }
 
+.bottom-line .cart-info {
+	background-color: #fafafa;
+}
 
 .bottom-line .cart .caret {
 	float: right;
@@ -308,6 +290,8 @@ span.phone {
 
 /* Head bottom-line @media */
 
+/* @media 991px to 1199px */
+
 @media screen and (min-width: 991px) and (max-width: 1199px) {
 	.bottom-line {
 		padding-left: 15px;
@@ -315,14 +299,20 @@ span.phone {
 	}
 
 	.bottom-line .table {
-		width: 86%;
+		width: 91%;
 	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+/* @media 768px to 990px */
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
 	.bottom-line {
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+	
+	.bottom-line .table {
+		width: 91%;
 	}
 
 	.bottom-line .col-md-3 {
@@ -337,7 +327,10 @@ span.phone {
 	.bottom-line .navbar-default .navbar-nav > li > a {
 		padding-right: 10px;
 	}
+
 }
+
+/* @media to 767 */
 
 @media screen and (max-width: 767px) {
 	.bottom-line {
@@ -355,6 +348,10 @@ span.phone {
         background-color: #fd926d;
 	}
 
+	.navbar-nav {
+ 	   margin: 0;
+	}
+
 	.nav-menu .navbar-default .navbar-toggle {
     	border: 0;
 	}
@@ -365,4 +362,76 @@ span.phone {
     	background-color: #ffffff;
 	}
 
+	.bottom-line .cart {
+		float: right;
+	}
+
+	.bottom-line .nav-menu .navbar-brand {
+		display: inline-block;
+		font-size: 18px;
+		font-family: Arial, sans-serif;
+		color: #ffffff;
+		text-transform: uppercase;
+	}
+
 }
+
+/* @media to 640 */
+
+@media screen and (max-width: 640px) {
+	.bottom-line i[class*="ic-"] {
+		background: url("../images/b-sprite.png") no-repeat;
+	}
+
+	.bottom-line i.ic-cart {
+		background-position: -77px 0;
+   		height: 49px;
+   		width: 52px;
+	}
+
+	.bottom-line .col-xs-4.cart {
+		width: 100%;
+		margin-bottom: 23px;
+	}
+
+	.bottom-line .cart .table {
+		height: 95px;
+		margin-top: 0px;
+		font-size: 30px;
+		vertical-align: middle;
+	}
+
+	.bottom-line .cart table td {
+		vertical-align: middle;
+	}
+
+	.bottom-line .cart span.cart-items {
+	    padding-right: 10px;
+	}
+
+
+	.bottom-line .col-xs-6.logo {
+		width: 100%;
+		text-align: center;
+	}
+
+	.bottom-line .col-xs-6.logo > img {
+		width: 360px;
+		height: 90px;
+	}
+
+	.bottom-line .cart .your-cart {
+		display: none;
+	}
+}
+
+/* @media to 380 */
+
+@media screen and (max-width: 380px) {
+	.bottom-line .col-xs-6.logo > img {
+		width: 300px;
+		height: 90px;
+	}
+}
+
+/*-----------------------------------------------------------------------*/
