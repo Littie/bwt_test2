@@ -2,6 +2,13 @@ body {
 	margin-top: 1px;
 }
 
+/* Fonts */
+
+@font-face {
+    font-family: "HelveticaNeueLT Std Thin";
+    src: url("../fonts/HelveticaNeueLTStdThin.otf")
+}
+
 /* Sprite icons */
 
 i[class*="ic-"] {
@@ -91,7 +98,6 @@ span.phone {
 /* Header top-line @media */
 
 /* @media 640px to 991px */
-
 @media screen and (min-width: 640px) and (max-width: 991px) {
 	.h-top-line {
 		padding-left: 15px;
@@ -104,7 +110,6 @@ span.phone {
 }
 
 /* @media 560px to 639px */
-
 @media screen and (max-width: 639px) {
 	.h-top-line i[class*="ic-"] {
 		background: url("../images/b-sprite.png") no-repeat;
@@ -173,7 +178,6 @@ span.phone {
 }
 
 /* @media 320px to 559px */
-
 @media screen and (max-width: 559px) {
 	.h-top-line {
 		font-size: 16px;
@@ -291,7 +295,6 @@ span.phone {
 /* Head bottom-line @media */
 
 /* @media 991px to 1199px */
-
 @media screen and (min-width: 991px) and (max-width: 1199px) {
 	.bottom-line {
 		padding-left: 15px;
@@ -304,7 +307,6 @@ span.phone {
 }
 
 /* @media 768px to 990px */
-
 @media screen and (min-width: 768px) and (max-width: 990px) {
 	.bottom-line {
 		padding-left: 15px;
@@ -331,7 +333,6 @@ span.phone {
 }
 
 /* @media to 767 */
-
 @media screen and (max-width: 767px) {
 	.bottom-line {
 		padding-left: 15px;
@@ -377,7 +378,6 @@ span.phone {
 }
 
 /* @media to 640 */
-
 @media screen and (max-width: 640px) {
 	.bottom-line i[class*="ic-"] {
 		background: url("../images/b-sprite.png") no-repeat;
@@ -426,7 +426,6 @@ span.phone {
 }
 
 /* @media to 380 */
-
 @media screen and (max-width: 380px) {
 	.bottom-line .col-xs-6.logo > img {
 		width: 300px;
@@ -469,3 +468,99 @@ span.phone {
 .top-carousel .carousel-control.right {
     background: rgba(0, 0, 0, 0) url("../images/carousel-next.png") no-repeat scroll right center;
 }
+
+.top-carousel .carousel-inner .layer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 65%;
+    height: 7px;
+    background: url("../images/b-carousel-bottom-line.png") repeat-x bottom;
+    opacity: 0.2;
+}
+
+.top-carousel .btn {
+    position: absolute;
+    left: 23%;
+    bottom: 20%;
+    width: 155px;
+    height: 57px;
+    border: 0;
+    border-radius: 0;
+    font-size: 16px;
+    font-family: "HelveticaNeueLT Std Thin", sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #fd926d url("../images/carousel-btn-line.png") repeat-x bottom;
+}
+
+.top-carousel .btn > img {
+    margin-left: 15px;
+    margin-bottom: 3px;
+}
+
+/* Head top-carousel @media */
+
+/* @media from 993px to 1200px */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .top-carousel .btn {
+        left: 22%;
+        bottom: 17%;
+    }
+}
+
+/* @media from 768px to 991px */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .top-carousel .btn {
+        left: 20%;
+        bottom: 12%;
+    }
+}
+
+/* @media from 640px to 767px */
+@media screen and (min-width: 640px) and (max-width: 767px) {
+    .top-carousel .btn {
+        left: 22%;
+        bottom: 16%;
+        width: 110px;
+        height: 40px;
+        font-size: 11.84px;
+    }
+
+    .top-carousel .btn > img {
+        margin-left: 5px;
+        margin-bottom: 3px;
+    }
+}
+
+/* @media to 639px */
+@media screen and (max-width: 639px) {
+    .top-carousel {
+        display: none;
+    }
+}
+
+/*-----------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
