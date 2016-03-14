@@ -435,3 +435,37 @@ span.phone {
 }
 
 /*-----------------------------------------------------------------------*/
+
+/* Head top-carousel */
+
+.top-carousel {
+	margin-top: 10px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.top-carousel .carousel-indicators {
+    margin-bottom: -60px;
+}
+
+.top-carousel .carousel-indicators li {
+    margin-right: 5px;
+    height: 13px;
+    width: 13px;
+    background-color: #867a76;
+}
+
+.top-carousel .carousel-indicators .active {
+    margin-right: 5px;
+    height: 14px;
+    width: 14px;
+    background-color: #fd926d;
+}
+
+.top-carousel .carousel-control.left {
+    background: rgba(0, 0, 0, 0) url("../images/carousel-prev.png") no-repeat scroll left center;
+}
+
+.top-carousel .carousel-control.right {
+    background: rgba(0, 0, 0, 0) url("../images/carousel-next.png") no-repeat scroll right center;
+}
