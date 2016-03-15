@@ -791,15 +791,51 @@ span.phone {
 }
 
 .brands .btn img {
-    width: inherit;
+    width: 4px;
+    height: 7px;
     margin-left: 8px;
     margin-bottom: 3px;
     vertical-align: middle;
 }
 
+/* Brands @media */
 
+/* @media to 1199 */
+@media screen and (max-width: 1199px) {
+    .brands button {
+        left: 9px;
+        bottom: 6px;
+    }
+}
 
+/* @media to 991 */
+@media screen and (max-width: 991px) {
+    .brands {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
+    .brands button {
+        width: 70px;
+        height: 20px;
+        left: 9px;
+        bottom: 6px;
+    }
+
+    .brands .btn-default {
+        font-size: 8px;
+    }
+
+}
+
+/* @media to 639 */
+@media screen and (max-width: 639px) {
+    .brands {
+        display: none;
+    }
+}
+
+/*-----------------------------------------------------------------------*/
 
 
 
