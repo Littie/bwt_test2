@@ -573,8 +573,9 @@ span.phone {
 }
 
 .social .btn {
-    background-image: url("../images/email-btn.png");
     padding: 13px;
+    border-radius: 0;
+    background-image: url("../images/email-btn.png");
 }
 
 .social .input-group .form-control {
@@ -727,12 +728,74 @@ span.phone {
 
 /*-----------------------------------------------------------------------*/
 
+/* Brands */
 
+.brands {
+    margin-top: 40px;
+    padding-left: 115px;
+    padding-right: 115px;
+}
 
+.brands .row {
+    margin: 0;
+    padding: 0;
+}
 
+.brands [class*="col-"] {
+    margin: 0;
+    padding: 0;
+}
 
+.brands .right-brand img {
+    width: 100%;
+}
 
+.brands .l-brand img {
+    width: 100%;
+}
 
+.brands .rt-brand {
+    padding-left: 1px;
+    padding-bottom: 1px;
+}
+
+.brands .rbl-brand {
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.brands .rbr-brand {
+    padding-top: 1px;
+    padding-left: 2px;
+}
+
+.brands .l-brand {
+    padding-right: 2px;
+}
+
+.brands button {
+    position: absolute;
+    left: 30px;
+    bottom: 18px;
+}
+
+.brands .btn-default {
+    border-radius: 0px;
+    border: 0px;
+    background-color: #4fafa0;
+    font-size: 12px;
+    font-family: Helvetica Neue LT Std;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.brands .btn img {
+    width: inherit;
+    margin-left: 8px;
+    margin-bottom: 3px;
+    vertical-align: middle;
+}
 
 
 
