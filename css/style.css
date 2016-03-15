@@ -373,6 +373,7 @@ span.phone {
 		font-family: Arial, sans-serif;
 		color: #ffffff;
 		text-transform: uppercase;
+        margin-top: 4px;
 	}
 
 }
@@ -443,8 +444,12 @@ span.phone {
 	padding-right: 0;
 }
 
+.top-carousel .radio-row {
+    height: 75px;
+}
+
 .top-carousel .carousel-indicators {
-    margin-bottom: -60px;
+    margin-bottom: -70px;
 }
 
 .top-carousel .carousel-indicators li {
@@ -520,6 +525,14 @@ span.phone {
 
 /* @media from 640px to 767px */
 @media screen and (min-width: 640px) and (max-width: 767px) {
+    .top-carousel .radio-row {
+        height: 55px;
+    }
+
+    .top-carousel .carousel-indicators {
+        margin-bottom: -50px;
+    }
+
     .top-carousel .btn {
         left: 22%;
         bottom: 16%;
@@ -543,13 +556,176 @@ span.phone {
 
 /*-----------------------------------------------------------------------*/
 
+/* Social */
 
+.social {
+    padding-left: 115px;
+    padding-right: 115px;
+    background-color: #ededed
+}
 
+.social .social-hidden {
+    display: none;
+}
 
+.social .social-wrap {
+    float: right;
+}
 
+.social .btn {
+    background-image: url("../images/email-btn.png");
+    padding: 13px;
+}
 
+.social .input-group .form-control {
+    height: 28px;
+    width: 130px;
+    margin: 14px auto;
+    border: 0;
+    border-radius: 0;
+    font-size: 12px;
+    font-family: Arial sans-serif;
+    font-style: italic;
+    color: #b9b9b9;
+}
 
+.social label {
+    margin-right: 10px;
+    font-size: 12px;
+    font-family: Arial sans-serif;
+    color: #747474;
+}
 
+.social .social-find {
+    margin-right: 6px;
+    font-size: 12px;
+    font-family: Arial sans-serif;
+    color: #6b6b6b;
+}
+
+/* Social @media */
+
+/* @media from 768px to 992px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .social {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* @media to 767 */
+@media screen and (max-width: 767px) {
+    .social {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .social .input-group {
+        display: -moz-inline-box;
+        margin-top: 15px;
+    }
+
+    .social label {
+        float: left;
+        margin-top: 21px;
+    }
+}
+
+/* @media to 639 */
+@media screen and (max-width: 639px) {
+    .social {
+        margin-top: 25px;
+        background-color: #ffffff;
+    }
+
+    .social .social-email {
+        display: none;
+    }
+
+    .social .social-hidden {
+        display: block;
+    }
+
+    .social .social-hidden .input-group {
+        display: block;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .social .social-hidden .input-group .input-group-btn {
+        display: block;
+        width: 16%;
+    }
+
+    .social .btn {
+        background-image: url("../images/big-email-btn.png");
+        width: 100%;
+        height: 96px;
+    }
+
+    .social .social-hidden .input-group input {
+        float: left;
+        width: 84%;
+        height: 96px;
+        margin: 0;
+    }
+
+    .social .input-group .form-control {
+        background-color: #ededed;
+        font-size: 30px;
+    }
+
+    .social .social-networks {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social .social-networks .social-wrap {
+        float: none;
+        display: inline-block;
+    }
+
+    .social .social-find {
+        font-size: 26px;
+        margin-right: 32px;
+    }
+
+    .social .social-networks img {
+        width: 85px;
+        height: 85px;
+    }
+}
+
+/* @media from 320px to 460 */
+@media screen and (max-width: 460px) {
+    .social-networks .social-wrap span {
+        margin-right: 2px;
+    }
+    .social-networks .social-wrap img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .social .social-hidden .input-group input {
+        float: left;
+        height: 50px;
+        margin: 0;
+    }
+
+    .social .btn {
+        background: #ededed url("../images/big-email-btn.png") no-repeat right;
+        -webkit-background-size: 50px;
+        background-size: 50px;
+        width: 100%;
+        height: 50px;
+    }
+
+    .social .input-group .form-control {
+        font-size: 26px;
+    }
+}
+
+/*-----------------------------------------------------------------------*/
 
 
 
