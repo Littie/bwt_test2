@@ -895,6 +895,12 @@ span.phone {
 }
 
 /* Body carousel @Media */
+@media screen and (min-width: 769px) {
+    #nav-tabs-wrapper {
+        display: block !important;
+    }
+}
+
 @media screen and (max-width: 640px) {
     .body-carousel {
         margin-top: 25px;
@@ -912,6 +918,7 @@ span.phone {
         border-top-right-radius: 0;
         text-align: center;
     }
+
     .nav-tabs-horizontal {
         background-color: #fd926d;
     }
