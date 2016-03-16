@@ -841,8 +841,49 @@ span.phone {
 
 .body-carousel {
     margin-top: 50px;
-    padding-left: 115px;
-    padding-right: 115px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.body-carousel .row-carousel ul {
+    margin-left: 115px;
+    margin-right: 115px;
+}
+
+.body-carousel .row-carousel .buttons-control {
+    float: right;
+}
+
+.body-carousel .row-carousel .buttons-control {
+    position: absolute;
+    display: block;
+    right: 130px;
+}
+
+.body-carousel .row-carousel .buttons-control a {
+    float: left;
+    width: 47px;
+    height: 47px;
+}
+
+.body-carousel .row-carousel .buttons-control .right-button {
+    background: url("../images/b-carousel-next.png") no-repeat right center;
+}
+
+.body-carousel .row-carousel .buttons-control .left-button {
+    background: url("../images/b-carousel-prev.png") no-repeat left center;
+}
+
+.body-carousel .row-carousel .buttons-control .right-button:hover {
+    background: url("../images/b-carousel-next-act.png") no-repeat right center;
+}
+
+.body-carousel .row-carousel .buttons-control .left-button:hover {
+    background: url("../images/b-carousel-prev-act.png") no-repeat right center;
+}
+
+.nav > li > a {
+    padding: 13px;
 }
 
 .nav-tabs > li.active > a,
@@ -894,8 +935,54 @@ span.phone {
     right: 30px;
 }
 
+.body-carousel .row-carousel img {
+    display: inline;
+    margin-top: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.body-carousel .row-carousel .item img:first-child {
+    margin-left: -125px;
+}
+
+.body-carousel .row-carousel .item img:last-child {
+    margin-right: -125px;
+}
+
+.body-carousel .row-carousel .carousel-inner > .item > img,
+.body-carousel .row-carousel .carousel-inner > .item > a > img {
+    display: inline-block;
+}
+
+.body-carousel .row-carousel .tab-content {
+    background-color: #f4845d;
+}
+
+/*------SLIDE---------*/
+.row-carousel .carousel-inner .active.left {
+    left: -25%;
+}
+
+.row-carousel .carousel-inner .active.right {
+    left: 25%;
+}
+
+.row-carousel .carousel-inner .next {
+    left: 25%;
+}
+
+.row-carousel .carousel-inner .prev {
+    left: -25%;
+}
+
+.carousel-inner .item {
+    background: #f4845d;
+}
+/*---------------------*/
+
 /* Body carousel @Media */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 641px) {
     #nav-tabs-wrapper {
         display: block !important;
     }
