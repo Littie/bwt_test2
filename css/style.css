@@ -872,7 +872,6 @@ span.phone {
     text-transform: uppercase;
 }
 
-/*------- Dropdown list --------*/
 .nav-tabs-dropdown {
     display: none;
     width: 100%;
@@ -880,9 +879,11 @@ span.phone {
     padding-top: 20px;
     border: none;
     border-radius: 0;
-    background-color: #fd926d;
+    background-color: #f4845d;
+    color: #ffffff;
     font-size: 30px;
     font-family: Arial, sans-serif;
+    text-align: left;
     text-transform: uppercase;
 }
 
@@ -893,6 +894,7 @@ span.phone {
     right: 30px;
 }
 
+/* Body carousel @Media */
 @media screen and (max-width: 640px) {
     .body-carousel {
         margin-top: 25px;
@@ -911,42 +913,18 @@ span.phone {
         text-align: center;
     }
     .nav-tabs-horizontal {
-        min-height: 20px;
-        padding: 19px;
-        margin-bottom: 20px;
         background-color: #fd926d;
-        border: 1px solid #e3e3e3;
-        border-radius: 4px;
-        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-        box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
     }
 
     .nav-tabs-horizontal  > li {
         float: none;
     }
 
-    .nav-tabs-horizontal  > li + li {
-        margin-left: 2px;
-    }
-
-    .nav-tabs-horizontal > li,
-    .nav-tabs-horizontal > li > a {
-        background: transparent;
-        width: 100%;
-    }
-
-    .nav-tabs-horizontal  > li > a {
-        border-radius: 4px;
-    }
-
-    .nav-tabs-horizontal  > li.active > a,
-    .nav-tabs-horizontal  > li.active > a:hover,
-    .nav-tabs-horizontal  > li.active > a:focus {
-        color: #ffffff;
-        background-color: #fd926d;
+    .btn:hover, .btn:focus, .btn.focus {
+        color: #555555;
     }
 }
-/*---------------*/
+
 
 
 
