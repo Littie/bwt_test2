@@ -935,18 +935,18 @@ span.phone {
     right: 30px;
 }
 
-.body-carousel .row-carousel img {
-    display: inline;
+.body-carousel .row-carousel .item-box {
+    float: left;
     margin-top: 30px;
     margin-right: 5px;
     margin-left: 5px;
 }
 
-.body-carousel .row-carousel .item img:first-child {
+.body-carousel .row-carousel .item-box:first-child {
     margin-left: -125px;
 }
 
-.body-carousel .row-carousel .item img:last-child {
+.body-carousel .row-carousel .item-box:last-child {
     margin-right: -125px;
 }
 
