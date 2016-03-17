@@ -920,7 +920,7 @@ span.phone {
     padding-top: 20px;
     border: none;
     border-radius: 0;
-    background-color: #f4845d;
+    background-color: #fd926d;
     color: #ffffff;
     font-size: 30px;
     font-family: Arial, sans-serif;
@@ -936,10 +936,48 @@ span.phone {
 }
 
 .body-carousel .row-carousel .item-box {
+    position: relative;
     float: left;
     margin-top: 30px;
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.body-carousel .row-carousel .description {
+    margin-bottom: 30px;
+    background-color: #f7f7f7;
+    font-family: Arial sans-serif;
+    color: #373737;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.body-carousel .row-carousel .title {
+    display: block;
+    padding-top: 12px;
+    font-size: 12px;
+}
+
+.body-carousel .row-carousel .price {
+    display: block;
+    font-size: 22px;
+}
+
+.body-carousel .row-carousel .btn {
+    margin-bottom: 11px;
+    border: 0;
+    border-radius: 0px;
+    background: #fd926d url("../images/carousel-btn-line.png") repeat-x bottom;
+    font-size: 12px;
+    font-family: Arial sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+
+}
+
+.body-carousel .row-carousel .btn img {
     margin-left: 5px;
+    margin-bottom: 3px;
 }
 
 .body-carousel .row-carousel .item-box:first-child {
@@ -956,7 +994,36 @@ span.phone {
 }
 
 .body-carousel .row-carousel .tab-content {
-    background-color: #f4845d;
+    background-color: #fd926d;
+}
+
+.body-carousel .row-carousel .item-box a {
+    text-decoration: none;
+}
+
+.body-carousel .row-carousel .item-box img.shop {
+    position: absolute;
+    left: 45px;
+    top: 50px;
+    visibility: hidden;
+}
+
+.body-carousel .row-carousel .item-box a:hover img.shop {
+    visibility: visible;
+}
+
+.body-carousel .sale {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.body-carousel .row-carousel .item-box a:hover img.product {
+    width: 103%;
+}
+
+.body-carousel .row-carousel .item-box a:hover .description {
+    width: 103%;
 }
 
 /*------SLIDE---------*/
@@ -976,10 +1043,9 @@ span.phone {
     left: -25%;
 }
 
-.carousel-inner .item {
+.row-carousel .carousel-inner .item {
     background: #f4845d;
 }
-/*---------------------*/
 
 /* Body carousel @Media */
 @media screen and (min-width: 641px) {
