@@ -1047,14 +1047,87 @@ span.phone {
     background: #f4845d;
 }
 
+.row-carousel .carousel-inner .more.btn{
+    display: none;
+    font-size: 20px;
+    font-family: "HelveticaNeueLT Std Thin";
+    color: #ffffff;
+    background: #000000 none;
+}
+
 /* Body carousel @Media */
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 651px) {
     #nav-tabs-wrapper {
         display: block !important;
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1199px) {
+    .row-carousel .carousel-inner .item-box.hidden-1200 {
+        display: none;
+    }
+
+    .body-carousel .row-carousel .item-box:first-child {
+        margin-left: 15px;
+    }
+
+    .body-carousel .row-carousel .item-box:last-child {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .row-carousel .carousel-inner .item-box.hidden-992 {
+        display: none;
+    }
+
+    .body-carousel .row-carousel .item-box:first-child {
+        margin-left: 25px;
+    }
+
+    .body-carousel .row-carousel .buttons-control {
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .row-carousel .carousel-inner .item-box.hidden-768 {
+        display: none;
+    }
+
+    .body-carousel .row-carousel .item-box:first-child {
+        float: left;
+    }
+
+    .body-carousel .row-carousel .item-box {
+        float: right;
+        margin-right: 25px;
+    }
+
+    .row-carousel .carousel-inner .active.left {
+        left: -50%;
+    }
+
+    .row-carousel .carousel-inner .active.right {
+        left: 50%;
+    }
+
+    .row-carousel .carousel-inner .next {
+        left: 50%;
+    }
+
+    .row-carousel .carousel-inner .prev {
+        left: -50%;
+    }
+
+
+    .body-carousel .row-carousel ul {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 650px) {
     .body-carousel {
         margin-top: 25px;
         padding-left: 15px;
@@ -1072,6 +1145,10 @@ span.phone {
         text-align: center;
     }
 
+    .body-carousel .row-carousel .nav-tabs-dropdown.btn {
+        font-size: 30px;
+    }
+
     .nav-tabs-horizontal {
         background-color: #fd926d;
     }
@@ -1083,6 +1160,41 @@ span.phone {
     .btn:hover, .btn:focus, .btn.focus {
         color: #555555;
     }
+
+    .body-carousel .row-carousel .buttons-control {
+        display: none;
+    }
+
+    .row-carousel .carousel-inner .more.btn {
+        display: inline;
+        margin-left: 36%;
+    }
+
+}
+
+@media screen and (max-width: 555px) {
+    .row-carousel .carousel-inner .item-box.hidden-555 {
+        display: none;
+    }
+
+    .body-carousel .row-carousel .item-box:first-child {
+        margin-left: 55px;
+    }
+
+    .row-carousel .carousel-inner .more.btn {
+        margin-left: 18%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .body-carousel .row-carousel .item-box:first-child {
+        margin-left: 35px;
+    }
+
+    .row-carousel .carousel-inner .more.btn {
+        margin-left: 25%;
+    }
+
 }
 
 
