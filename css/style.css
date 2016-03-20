@@ -1346,7 +1346,7 @@ span.phone {
 	padding-right: 15px;
 }
 
-.container.favourite .col-md-12.brands {
+.container.favourite .col-xs-12.brands {
 	margin-top: 15px;
 	padding-left: 115px;
 	padding-right: 115px;
@@ -1388,15 +1388,11 @@ span.phone {
     margin-right: 0;
 }
 
-.container.favourite a:last-child {
-	margin-right: 0;
-}
-
 /* Favourite brands @media */
 
 /* @media to 1199px */
 @media screen and (max-width: 1199px) {
-    .container.favourite .col-md-12.brands {
+    .container.favourite .col-xs-12.brands {
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -1448,7 +1444,7 @@ span.phone {
 
 /* @media to 639px */
 @media screen and (max-width: 639px) {
-    .container.hidden-640 {
+    .container.favourite {
         display: none;
     }
 }
@@ -1456,12 +1452,82 @@ span.phone {
 /*-----------------------------------------------------------------------*/
 
 
+/* Footer */
 
+/* About */
 
+.container.about {
+    margin-top: 30px;
+}
 
+.container.about span {
+    display: table;
+    margin: 0 auto;
+    font-size: 24px;
+    font-family: Arial sans-serif;
+    color: #414141;
+}
 
+.container.about p {
+    text-align: center;
+    color: #999999;
+}
 
+/* About @media */
 
+@media screen and (max-width: 639px) {
+
+}
+
+/* @media to 639px */
+@media screen and (max-width: 639px) {
+    .container.about {
+        display: none;
+    }
+}
+
+/*-----------------------------------------------------------------------*/
+
+/* Accept */
+
+.container.accept {
+    margin-top: 25px;
+    background-color: #f7f7f7;
+}
+
+.container.accept .col-xs-12 {
+    margin: 19px 0 17px 22%;
+}
+
+.container.accept a {
+    float: left;
+    margin-right: 10px;
+}
+
+.container.accept span {
+    float: left;
+    margin-top: 3px;
+    margin-right: 15px;
+    font-size: 12px;
+    font-family: Arial sans-serif;
+    color: #414141;
+}
+
+/* Accept @media */
+
+/* @media to 991px */
+@media screen and (max-width: 991px) {
+    .container.accept .col-xs-12 {
+        margin-left: 11%;
+    }
+}
+
+/* @media to 639px */
+@media screen and (max-width: 639px) {
+    .container.accept {
+        display: none;
+    }
+}
 
 
 
