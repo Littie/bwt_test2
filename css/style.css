@@ -1460,6 +1460,11 @@ span.phone {
     margin-top: 30px;
 }
 
+.container.about .col-xs-12 {
+    padding-left: 115px;
+    padding-right: 115px;
+}
+
 .container.about span {
     display: table;
     margin: 0 auto;
@@ -1475,8 +1480,11 @@ span.phone {
 
 /* About @media */
 
-@media screen and (max-width: 639px) {
-
+@media screen and (max-width: 991px) {
+    .container.about .col-xs-12 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 /* @media to 639px */
@@ -1529,9 +1537,142 @@ span.phone {
     }
 }
 
+/*-----------------------------------------------------------------------*/
 
+/* f-menu */
 
+.container.f-menu {
+    padding-left: 115px;
+    padding-right: 115px;
+    background-color: #ededed;
+}
 
+.f-menu ul {
+    padding: 0;
+}
 
+.f-menu li {
+    list-style: none;
+}
 
+.f-menu a {
+    font-size: 12px;
+    font-family: Arial sans-serif;
+    color: #544f4d;
+    text-decoration: none;
+}
 
+.f-menu span {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 18px;
+    font-family: Arial sans-serif;
+    color: #3b3634;
+}
+
+.container.f-menu .service {
+    padding-left: 0;
+}
+
+.container.f-menu .information {
+    padding-left: 30px;
+}
+
+.container.f-menu .campaigns {
+    padding-left: 35px;
+}
+
+.container.f-menu .stores {
+    padding-left: 45px;
+}
+
+.container.f-menu .social {
+    padding-left: 25px;
+    padding-right: 0;
+}
+
+.container.f-menu .social a {
+    float: left;
+    margin: 9px 9px 0 0px;
+}
+
+.container.f-menu .secured {
+    float: right;
+}
+
+.f-menu .secured img {
+    margin-top: 50px;
+    margin-left: 35px;
+}
+
+/* f-menu @media */
+
+/* @media to 1199px */
+@media screen and (max-width: 1199px) {
+    .container.f-menu {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .container.f-menu .service {
+        padding-left: 10px;
+    }
+
+    .f-menu .secured img {
+        margin-left: 0;
+    }
+
+    .container.f-menu .service {
+        padding-left: 5px;
+    }
+
+    .container.f-menu .information {
+        padding-left: 5px;
+    }
+
+    .container.f-menu .campaigns {
+        padding-left: 5px;
+    }
+
+    .container.f-menu .stores {
+        padding-left: 5px;
+    }
+
+    .container.f-menu .social {
+        padding-left: 5px;
+        padding-right: 0;
+    }
+
+}
+
+/* @media to 991px */
+@media screen and (max-width: 991px) {
+    .container.f-menu .service {
+        padding-left: 10px;
+    }
+
+    .container.f-menu .social {
+        padding-left: 5px;
+        padding-right: 0;
+    }
+
+    .container.f-menu .campaigns {
+        padding-left: 10px;
+    }
+
+    .container.f-menu .social a {
+        float: left;
+        margin: 9px 12px 0 0;
+    }
+
+}
+
+/* @media to 639px */
+@media screen and (max-width: 639px) {
+    .container.f-menu {
+        display: none;
+    }
+}
+
+/*-----------------------------------------------------------------------*/
