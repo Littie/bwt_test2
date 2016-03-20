@@ -1338,11 +1338,122 @@ span.phone {
 
 /*-----------------------------------------------------------------------*/
 
+/* Favourite brands */
 
+.container.favourite {
+    margin-top: 60px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
 
+.container.favourite .col-md-12.brands {
+	margin-top: 15px;
+	padding-left: 115px;
+	padding-right: 115px;
+}
 
+.favourite hr.left {
+	float: left;
+	width: 40%;
+	margin: 10px 20px 0 0;
+	color: #c5c5c5;
+}
 
+.favourite hr.right {
+	float: left;
+	width: 40%;
+	margin: 10px 0 0 20px;
+	color: #c5c5c5;
+}
 
+.container.favourite span {
+	float: left;
+	font-size: 15px;
+	font-family: Arial sans-serif;
+	color: #414141;
+	text-transform: uppercase;
+}
+
+.favourite hr {
+	margin-bottom: 0;
+}
+
+.container.favourite a {
+	float: left;
+	margin-right: 20px;
+    margin-left: 20px;
+}
+
+.container.favourite a:last-child {
+    margin-right: 0;
+}
+
+.container.favourite a:last-child {
+	margin-right: 0;
+}
+
+/* Favourite brands @media */
+
+/* @media to 1199px */
+@media screen and (max-width: 1199px) {
+    .container.favourite .col-md-12.brands {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* @media to 991px */
+@media screen and (max-width: 991px) {
+    .favourite img.hidden-768 {
+        display: none;
+    }
+
+    .favourite .brands a {
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    .favourite hr.left {
+        width: 37%;
+    }
+
+    .favourite hr.right {
+        width: 37%;
+    }
+}
+
+/* @media to 767px */
+@media screen and (max-width: 767px) {
+    .favourite img.hidden-768 {
+        display: none;
+    }
+
+    .favourite .brands a:first-child {
+        margin-left: 0px;
+    }
+
+    .favourite .brands a {
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+
+    .favourite hr.left {
+        width: 35%;
+    }
+
+    .favourite hr.right {
+        width: 34%;
+    }
+}
+
+/* @media to 639px */
+@media screen and (max-width: 639px) {
+    .container.hidden-640 {
+        display: none;
+    }
+}
+
+/*-----------------------------------------------------------------------*/
 
 
 
