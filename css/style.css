@@ -1730,6 +1730,7 @@ span.phone {
 
 /* f-bottom @media */
 
+/* @media to 991px */
 @media screen and (max-width: 991px) {
     .container.f-bottom {
         padding-left: 15px;
@@ -1742,6 +1743,7 @@ span.phone {
 
 }
 
+/* @media to 767px */
 @media screen and (max-width: 767px) {
     .container.f-bottom .col-xs-2 {
         padding-left: 0;
@@ -1758,6 +1760,7 @@ span.phone {
     }
 }
 
+/* @media to 639px */
 @media screen and (max-width: 639px) {
     .container.f-bottom {
         height: 100px;
@@ -1791,3 +1794,4 @@ span.phone {
         padding: 15px 20px;
     }
 }
+/*-----------------------------------------------------------------------*/
