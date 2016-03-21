@@ -1676,3 +1676,118 @@ span.phone {
 }
 
 /*-----------------------------------------------------------------------*/
+
+/* f-bottom */
+
+.container.f-bottom {
+    height: 70px;
+    padding-left: 115px;
+    padding-right: 115px;
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+	background-color: #000;
+    color: #8d8d8d;
+}
+
+.container.f-bottom .col-xs-10 {
+    padding-left: 0;
+}
+
+.container.f-bottom .navbar-default {
+    margin-top: 15px;
+    margin-bottom: 0;
+    background-color: #000;
+    border: 0;
+}
+
+.container.f-bottom .navbar-collapse {
+    padding-left: 0;
+}
+
+.container.f-bottom .navbar-default li a {
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+    color: #8d8d8d;
+}
+
+.container.f-bottom .navbar-default li a:first-child {
+    padding-left: 0px;
+}
+
+.container.f-bottom .navbar-default li a:after {
+    padding-left: 10px;
+    content: "|";
+}
+
+.container.f-bottom .col-xs-2 {
+    margin-top: 20px;
+}
+
+.container.f-bottom .col-xs-2 span.brand,
+.container.f-bottom .col-xs-2 span.rights {
+    float: right;
+}
+
+/* f-bottom @media */
+
+@media screen and (max-width: 991px) {
+    .container.f-bottom {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .container.f-bottom .navbar-default li a:first-child {
+        padding-left: 10px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .container.f-bottom .col-xs-2 {
+        padding-left: 0;
+    }
+
+    .container.f-bottom .navbar-toggle {
+       float: left;
+       padding: 5px 10px;
+       border: 0;
+    }
+
+    .container.f-bottom .navbar-default li a:after {
+        content: "";
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .container.f-bottom {
+        height: 100px;
+        background-color: #000;
+    }
+
+    .container.f-bottom .col-xs-2 span.brand,
+    .container.f-bottom .col-xs-2 span.rights {
+        font-size: 24px;
+    }
+
+    .container.f-bottom .navbar-toggle .icon-bar {
+        border-radius: 3px;
+        height: 7px;
+        width: 30px;
+    }
+
+    .container.f-bottom .col-xs-10 {
+        width: 50%;
+    }
+
+    .container.f-bottom .col-xs-2 {
+        width: 50%;
+    }
+
+    .container.f-bottom .navbar-default .navbar-toggle .icon-bar {
+        background-color: #ffffff;
+    }
+
+    .container.f-bottom .navbar-toggle {
+        padding: 15px 20px;
+    }
+}
