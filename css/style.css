@@ -1282,11 +1282,11 @@ span.phone {
     margin-bottom: 3px;
 }
 
-.clearance .row .col-xs-12 {
+.clearance .row .col-more {
     margin: 30px 0 20px 37%;
 }
 
-.clearance .more.btn{
+.clearance .more.btn {
     display: none;
     font-size: 20px;
     font-family: "HelveticaNeueLT Std Thin";
