@@ -1282,6 +1282,18 @@ span.phone {
     margin-bottom: 3px;
 }
 
+.clearance .row .col-xs-12 {
+    margin: 30px 0 20px 37%;
+}
+
+.clearance .more.btn{
+    display: none;
+    font-size: 20px;
+    font-family: "HelveticaNeueLT Std Thin";
+    color: #ffffff;
+    background: #000000 none;
+}
+
 /* Clearance @media */
 
 /* @media to 1199px */
@@ -1333,6 +1345,10 @@ span.phone {
 
     .clearance .description img.visible-640 {
         display: block;
+    }
+
+    .clearance .more.btn{
+        display: inline-block;
     }
 }
 
