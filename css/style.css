@@ -1566,7 +1566,6 @@ span.phone {
 }
 
 .accept .col-xs-12 {
-    /*todo: как лучше съехать к середине*/
     margin: 19px 0 17px 0;
 }
 
@@ -1585,7 +1584,7 @@ span.phone {
 
 /* Accept @media */
 
-/* @media to 991px */
+/* @media to 767px */
 @media screen and (max-width: 767px) {
     .accept a {
         margin-right: 4px;
@@ -1642,7 +1641,7 @@ span.phone {
 }
 
 .f-menu .campaigns {
-    padding-left: 35px;
+    padding-left: 27px;
 }
 
 .f-menu .stores {
@@ -1659,12 +1658,17 @@ span.phone {
     margin: 9px 9px 0 0;
 }
 
+.f-menu .wrapper {
+    max-width: 145px;
+}
+
 .f-menu .secured {
     float: right;
 }
 
 .f-menu .secured img {
-    margin-top: 50px;
+    float: right;
+    margin-top: 40px;
     margin-left: 35px;
 }
 
@@ -1678,6 +1682,7 @@ span.phone {
     }
 
     .f-menu .service {
+        width: 21%;
         padding-left: 10px;
     }
 
@@ -1711,7 +1716,7 @@ span.phone {
 /* @media to 991px */
 @media screen and (max-width: 991px) {
     .f-menu .service {
-        padding-left: 10px;
+        padding: 0;
     }
 
     .f-menu .social {
@@ -1720,14 +1725,25 @@ span.phone {
     }
 
     .f-menu .campaigns {
-        padding-left: 10px;
+        padding: 0;
+    }
+
+    .f-menu .stores {
+        padding: 0;
     }
 
     .f-menu .social a {
         float: left;
-        margin: 9px 12px 0 0;
+        margin: 9px 4px 0 0;
     }
 
+}
+
+@media screen and (max-width: 767px) {
+    .f-menu .social a {
+        float: left;
+        margin: 9px 10px 0 0;
+    }
 }
 
 /* @media to 639px */
@@ -1787,18 +1803,22 @@ span.phone {
 
 .f-bottom .col-xs-2 span.brand,
 .f-bottom .col-xs-2 span.rights {
+    clear: both;
     float: right;
 }
 
 /* f-bottom @media */
 
-/* @media to 991px */
-@media screen and (max-width: 991px) {
+/* @media to 1199px */
+@media screen and (max-width: 1199px) {
     .f-bottom {
         padding-left: 15px;
         padding-right: 15px;
     }
+}
 
+/* @media to 991px */
+@media screen and (max-width: 991px) {
     .f-bottom .navbar-default li a:first-child {
         padding-left: 10px;
     }
