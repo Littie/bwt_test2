@@ -1561,6 +1561,7 @@ span.phone {
 
 .accept {
     margin-top: 25px;
+    text-align: center;
     background-color: #f7f7f7;
 }
 
@@ -1570,14 +1571,13 @@ span.phone {
 }
 
 .accept a {
-    float: left;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .accept span {
-    float: left;
     margin-top: 3px;
-    margin-right: 15px;
+    margin-right: 10px;
     font-size: 12px;
     font-family: Arial sans-serif;
     color: #414141;
@@ -1586,9 +1586,9 @@ span.phone {
 /* Accept @media */
 
 /* @media to 991px */
-@media screen and (max-width: 991px) {
-    .accept .col-xs-12 {
-        margin-left: 11%;
+@media screen and (max-width: 767px) {
+    .accept a {
+        margin-right: 4px;
     }
 }
 
