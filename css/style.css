@@ -2,6 +2,11 @@ body {
 	margin-top: 1px;
 }
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 /* Fonts */
 
 @font-face {
@@ -128,8 +133,8 @@ span.phone {
 	}
 
 	.h-top-line {
-		padding-left: 0px;
-		padding-right: 0px;
+		padding-left: 0;
+		padding-right: 0;
 		font-size: 30px;
 		text-align: center;
 	}
@@ -397,7 +402,7 @@ span.phone {
 
 	.bottom-line .cart .table {
 		height: 95px;
-		margin-top: 0px;
+		margin-top: 0;
 		font-size: 30px;
 		vertical-align: middle;
 	}
@@ -503,6 +508,13 @@ span.phone {
 .top-carousel .btn > img {
     margin-left: 15px;
     margin-bottom: 3px;
+}
+
+.top-carousel .img-responsive, .thumbnail > img,
+.top-carousel .thumbnail a > img,
+.top-carousel .carousel-inner > .item > img,
+.top-carousel .carousel-inner > .item > a > img {
+	width: 100%;
 }
 
 /* Head top-carousel @media */
@@ -781,8 +793,8 @@ span.phone {
 }
 
 .brands .btn-default {
-    border-radius: 0px;
-    border: 0px;
+    border-radius: 0;
+    border: 0;
     background-color: #4fafa0;
     font-size: 12px;
     font-family: Helvetica Neue LT Std;
@@ -841,8 +853,8 @@ span.phone {
 
 .body-carousel {
     margin-top: 50px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .body-carousel .row-carousel ul {
@@ -966,7 +978,7 @@ span.phone {
 .body-carousel .row-carousel .btn {
     margin-bottom: 11px;
     border: 0;
-    border-radius: 0px;
+    border-radius: 0;
     background: #fd926d url("../images/carousel-btn-line.png") repeat-x bottom;
     font-size: 12px;
     font-family: Arial sans-serif;
@@ -1268,7 +1280,7 @@ span.phone {
 .clearance .btn {
     margin-bottom: 11px;
     border: 0;
-    border-radius: 0px;
+    border-radius: 0;
     background: #fd926d url("../images/carousel-btn-line.png") repeat-x bottom;
     font-size: 12px;
     font-family: Arial sans-serif;
@@ -1356,51 +1368,71 @@ span.phone {
 
 /* Favourite brands */
 
-.container.favourite {
+.favourite {
     margin-top: 60px;
 	padding-left: 15px;
 	padding-right: 15px;
+    text-align: center;
 }
 
-.container.favourite .col-xs-12.brands {
+.favourite .col-xs-12.brands {
 	margin-top: 15px;
 	padding-left: 115px;
 	padding-right: 115px;
 }
 
-.favourite hr.left {
-	float: left;
-	width: 40%;
-	margin: 10px 20px 0 0;
-	color: #c5c5c5;
+.favourite span.left {
+    background: rgb(208, 208, 208) none repeat scroll 0 0;
+    bottom: 10px;
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 42%;
 }
 
-.favourite hr.right {
-	float: left;
-	width: 40%;
-	margin: 10px 0 0 20px;
-	color: #c5c5c5;
+.favourite span.right {
+    background: rgb(208, 208, 208) none repeat scroll 0 0;
+    bottom: 10px;
+    display: block;
+    height: 1px;
+    position: absolute;
+    right: 0;
+    width: 42%;
 }
 
-.container.favourite span {
-	float: left;
+.favourite span.full {
+    background: rgb(208, 208, 208) none repeat scroll 0 0;
+    bottom: -10px;
+    display: block;
+    height: 1px;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+.favourite hr {
+    background: rgb(208, 208, 208) none repeat scroll 0 0;
+    height: 1px;
+}
+
+.favourite span {
 	font-size: 15px;
 	font-family: Arial sans-serif;
 	color: #414141;
 	text-transform: uppercase;
 }
 
-.favourite hr {
-	margin-bottom: 0;
-}
-
-.container.favourite a {
-	float: left;
+.favourite a {
 	margin-right: 20px;
     margin-left: 20px;
 }
 
-.container.favourite a:last-child {
+.favourite a:first-child {
+    margin-left: 0;
+}
+
+.favourite a:last-child {
     margin-right: 0;
 }
 
@@ -1408,7 +1440,7 @@ span.phone {
 
 /* @media to 1199px */
 @media screen and (max-width: 1199px) {
-    .container.favourite .col-xs-12.brands {
+    .favourite .col-xs-12.brands {
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -1416,21 +1448,19 @@ span.phone {
 
 /* @media to 991px */
 @media screen and (max-width: 991px) {
-    .favourite img.hidden-768 {
+    .favourite a.hidden-768 {
         display: none;
+        margin: 0;
     }
 
     .favourite .brands a {
-        margin-right: 25px;
-        margin-left: 25px;
+        margin-right: 23px;
+        margin-left: 23px;
     }
 
-    .favourite hr.left {
-        width: 37%;
-    }
-
-    .favourite hr.right {
-        width: 37%;
+    .favourite span.left,
+    .favourite span.right {
+        width: 39%;
     }
 }
 
@@ -1441,26 +1471,23 @@ span.phone {
     }
 
     .favourite .brands a:first-child {
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .favourite .brands a {
-        margin-right: 16px;
-        margin-left: 16px;
+        margin-right: 14px;
+        margin-left: 14px;
     }
 
-    .favourite hr.left {
-        width: 35%;
-    }
-
-    .favourite hr.right {
-        width: 34%;
+    .favourite span.left,
+    .favourite span.right {
+        width: 37%;
     }
 }
 
 /* @media to 639px */
 @media screen and (max-width: 639px) {
-    .container.favourite {
+    .favourite {
         display: none;
     }
 }
@@ -1514,21 +1541,22 @@ span.phone {
 
 /* Accept */
 
-.container.accept {
+.accept {
     margin-top: 25px;
     background-color: #f7f7f7;
 }
 
-.container.accept .col-xs-12 {
-    margin: 19px 0 17px 22%;
+.accept .col-xs-12 {
+    /*todo: как лучше съехать к середине*/
+    margin: 19px 0 17px 0;
 }
 
-.container.accept a {
+.accept a {
     float: left;
     margin-right: 10px;
 }
 
-.container.accept span {
+.accept span {
     float: left;
     margin-top: 3px;
     margin-right: 15px;
@@ -1541,14 +1569,14 @@ span.phone {
 
 /* @media to 991px */
 @media screen and (max-width: 991px) {
-    .container.accept .col-xs-12 {
+    .accept .col-xs-12 {
         margin-left: 11%;
     }
 }
 
 /* @media to 639px */
 @media screen and (max-width: 639px) {
-    .container.accept {
+    .accept {
         display: none;
     }
 }
@@ -1557,7 +1585,7 @@ span.phone {
 
 /* f-menu */
 
-.container.f-menu {
+.f-menu {
     padding-left: 115px;
     padding-right: 115px;
     background-color: #ededed;
@@ -1587,33 +1615,33 @@ span.phone {
     color: #3b3634;
 }
 
-.container.f-menu .service {
+.f-menu .service {
     padding-left: 0;
 }
 
-.container.f-menu .information {
+.f-menu .information {
     padding-left: 30px;
 }
 
-.container.f-menu .campaigns {
+.f-menu .campaigns {
     padding-left: 35px;
 }
 
-.container.f-menu .stores {
+.f-menu .stores {
     padding-left: 45px;
 }
 
-.container.f-menu .social {
+.f-menu .social {
     padding-left: 25px;
     padding-right: 0;
 }
 
-.container.f-menu .social a {
+.f-menu .social a {
     float: left;
-    margin: 9px 9px 0 0px;
+    margin: 9px 9px 0 0;
 }
 
-.container.f-menu .secured {
+.f-menu .secured {
     float: right;
 }
 
@@ -1626,12 +1654,12 @@ span.phone {
 
 /* @media to 1199px */
 @media screen and (max-width: 1199px) {
-    .container.f-menu {
+    .f-menu {
         padding-left: 15px;
         padding-right: 15px;
     }
 
-    .container.f-menu .service {
+    .f-menu .service {
         padding-left: 10px;
     }
 
@@ -1639,23 +1667,23 @@ span.phone {
         margin-left: 0;
     }
 
-    .container.f-menu .service {
+    .f-menu .service {
         padding-left: 5px;
     }
 
-    .container.f-menu .information {
+    .f-menu .information {
         padding-left: 5px;
     }
 
-    .container.f-menu .campaigns {
+    .f-menu .campaigns {
         padding-left: 5px;
     }
 
-    .container.f-menu .stores {
+    .f-menu .stores {
         padding-left: 5px;
     }
 
-    .container.f-menu .social {
+    .f-menu .social {
         padding-left: 5px;
         padding-right: 0;
     }
@@ -1664,20 +1692,20 @@ span.phone {
 
 /* @media to 991px */
 @media screen and (max-width: 991px) {
-    .container.f-menu .service {
+    .f-menu .service {
         padding-left: 10px;
     }
 
-    .container.f-menu .social {
+    .f-menu .social {
         padding-left: 5px;
         padding-right: 0;
     }
 
-    .container.f-menu .campaigns {
+    .f-menu .campaigns {
         padding-left: 10px;
     }
 
-    .container.f-menu .social a {
+    .f-menu .social a {
         float: left;
         margin: 9px 12px 0 0;
     }
@@ -1686,7 +1714,7 @@ span.phone {
 
 /* @media to 639px */
 @media screen and (max-width: 639px) {
-    .container.f-menu {
+    .f-menu {
         display: none;
     }
 }
@@ -1695,7 +1723,7 @@ span.phone {
 
 /* f-bottom */
 
-.container.f-bottom {
+.f-bottom {
     height: 70px;
     padding-left: 115px;
     padding-right: 115px;
@@ -1705,42 +1733,42 @@ span.phone {
     color: #8d8d8d;
 }
 
-.container.f-bottom .col-xs-10 {
+.f-bottom .col-xs-10 {
     padding-left: 0;
 }
 
-.container.f-bottom .navbar-default {
+.f-bottom .navbar-default {
     margin-top: 15px;
     margin-bottom: 0;
     background-color: #000;
     border: 0;
 }
 
-.container.f-bottom .navbar-collapse {
+.f-bottom .navbar-collapse {
     padding-left: 0;
 }
 
-.container.f-bottom .navbar-default li a {
+.f-bottom .navbar-default li a {
     font-size: 11px;
     font-family: Arial, sans-serif;
     color: #8d8d8d;
 }
 
-.container.f-bottom .navbar-default li a:first-child {
-    padding-left: 0px;
+.f-bottom .navbar-default li a:first-child {
+    padding-left: 0;
 }
 
-.container.f-bottom .navbar-default li a:after {
+.f-bottom .navbar-default li a:after {
     padding-left: 10px;
     content: "|";
 }
 
-.container.f-bottom .col-xs-2 {
+.f-bottom .col-xs-2 {
     margin-top: 20px;
 }
 
-.container.f-bottom .col-xs-2 span.brand,
-.container.f-bottom .col-xs-2 span.rights {
+.f-bottom .col-xs-2 span.brand,
+.f-bottom .col-xs-2 span.rights {
     float: right;
 }
 
@@ -1748,12 +1776,12 @@ span.phone {
 
 /* @media to 991px */
 @media screen and (max-width: 991px) {
-    .container.f-bottom {
+    .f-bottom {
         padding-left: 15px;
         padding-right: 15px;
     }
 
-    .container.f-bottom .navbar-default li a:first-child {
+    .f-bottom .navbar-default li a:first-child {
         padding-left: 10px;
     }
 
@@ -1761,52 +1789,52 @@ span.phone {
 
 /* @media to 767px */
 @media screen and (max-width: 767px) {
-    .container.f-bottom .col-xs-2 {
+    .f-bottom .col-xs-2 {
         padding-left: 0;
     }
 
-    .container.f-bottom .navbar-toggle {
+    .f-bottom .navbar-toggle {
        float: left;
        padding: 5px 10px;
        border: 0;
     }
 
-    .container.f-bottom .navbar-default li a:after {
+    .f-bottom .navbar-default li a:after {
         content: "";
     }
 }
 
 /* @media to 639px */
 @media screen and (max-width: 639px) {
-    .container.f-bottom {
+    .f-bottom {
         height: 100px;
         background-color: #000;
     }
 
-    .container.f-bottom .col-xs-2 span.brand,
-    .container.f-bottom .col-xs-2 span.rights {
+    .f-bottom .col-xs-2 span.brand,
+    .f-bottom .col-xs-2 span.rights {
         font-size: 24px;
     }
 
-    .container.f-bottom .navbar-toggle .icon-bar {
+    .f-bottom .navbar-toggle .icon-bar {
         border-radius: 3px;
         height: 7px;
         width: 30px;
     }
 
-    .container.f-bottom .col-xs-10 {
+    .f-bottom .col-xs-10 {
         width: 50%;
     }
 
-    .container.f-bottom .col-xs-2 {
+    .f-bottom .col-xs-2 {
         width: 50%;
     }
 
-    .container.f-bottom .navbar-default .navbar-toggle .icon-bar {
+    .f-bottom .navbar-default .navbar-toggle .icon-bar {
         background-color: #ffffff;
     }
 
-    .container.f-bottom .navbar-toggle {
+    .f-bottom .navbar-toggle {
         padding: 15px 20px;
     }
 }
