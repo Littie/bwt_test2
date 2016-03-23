@@ -91,8 +91,8 @@ span.phone {
 }
 
 .account .lang-list .navbar-collapse > ul {
+    margin: 2;
 	padding: 0;
-	margin: 0;
 }
 
 .account .lang-list .navbar-collapse > ul > a {
@@ -135,7 +135,7 @@ span.phone {
 	.h-top-line {
 		padding-left: 0;
 		padding-right: 0;
-		font-size: 30px;
+		font-size: 28px;
 		text-align: center;
 	}
 
@@ -149,6 +149,7 @@ span.phone {
 
 	.h-top-line .navbar-collapse {
 		box-shadow: none;
+        padding: 0;
 	}
 
 	span.phone {
@@ -185,7 +186,7 @@ span.phone {
 /* @media 320px to 559px */
 @media screen and (max-width: 559px) {
 	.h-top-line {
-		font-size: 16px;
+		font-size: 15px;
 	}
 
 	span.phone {
@@ -202,13 +203,13 @@ span.phone {
 		width: 50%;
 		height: 65px;
 		padding-top: 15px;
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 	.search {
 		width: 25%;
 		height: 65px;
-		padding-top: 20px;
+		padding-top: 15px;
 	}
 
 	.account a {
@@ -230,7 +231,6 @@ span.phone {
 
 .bottom-line .logo {
 	margin: 42px auto;
-
 }
 
 .bottom-line .logo > img {
@@ -266,8 +266,10 @@ span.phone {
 }
 
 .bottom-line .cart .table {
-	margin-top: 20px;
-	margin-bottom: 0;
+    float: right;
+    margin-bottom: 0;
+    margin-top: 20px;
+    max-width: 250px;
 }
 
 .bottom-line .cart a {
@@ -401,9 +403,11 @@ span.phone {
 	}
 
 	.bottom-line .cart .table {
+        float: none;
 		height: 95px;
 		margin-top: 0;
-		font-size: 30px;
+        max-width: 100%;
+		font-size: 26px;
 		vertical-align: middle;
 	}
 
@@ -412,6 +416,7 @@ span.phone {
 	}
 
 	.bottom-line .cart span.cart-items {
+        margin-top: 10px;
 	    padding-right: 10px;
 	}
 
@@ -422,7 +427,7 @@ span.phone {
 	}
 
 	.bottom-line .col-xs-6.logo > img {
-		width: 360px;
+		width: 350px;
 		height: 90px;
 	}
 
@@ -434,9 +439,13 @@ span.phone {
 /* @media to 380 */
 @media screen and (max-width: 380px) {
 	.bottom-line .col-xs-6.logo > img {
-		width: 300px;
-		height: 90px;
+		width: 260px;
+		height: 70px;
 	}
+
+    .bottom-line .logo {
+        margin: 20px auto;
+    }
 }
 
 /*-----------------------------------------------------------------------*/
@@ -633,6 +642,7 @@ span.phone {
         padding-right: 15px;
     }
     
+
     .social .input-group {
         display: -moz-inline-box;
         margin-top: 15px;
@@ -683,6 +693,10 @@ span.phone {
         margin: 0;
     }
 
+    .social .input-group {
+        margin-top: 5px;
+    }
+
     .social .input-group .form-control {
         background-color: #ededed;
         font-size: 30px;
@@ -699,8 +713,8 @@ span.phone {
     }
 
     .social .social-find {
-        font-size: 26px;
         margin-right: 32px;
+        font-size: 22px;
     }
 
     .social .social-networks img {
@@ -715,8 +729,8 @@ span.phone {
         margin-right: 2px;
     }
     .social-networks .social-wrap img {
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
     }
 
     .social .social-hidden .input-group input {
@@ -734,7 +748,7 @@ span.phone {
     }
 
     .social .input-group .form-control {
-        font-size: 26px;
+        font-size: 22px;
     }
 }
 
@@ -1293,7 +1307,6 @@ span.phone {
     font-family: Arial sans-serif;
     text-transform: uppercase;
     color: #ffffff;
-
 }
 
 .clearance .btn img {
@@ -1301,12 +1314,9 @@ span.phone {
     margin-bottom: 3px;
 }
 
-.clearance .row .col-more {
-    margin: 30px 0 20px 37%;
-}
-
 .clearance .more.btn {
     display: none;
+    margin-top: 20px;
     font-size: 20px;
     font-family: "HelveticaNeueLT Std Thin";
     color: #ffffff;
@@ -1378,7 +1388,15 @@ span.phone {
 @media screen and (max-width: 460px) {
     .clearance span.left,
     .clearance span.right {
-        width: 23%;
+        width: 21%;
+    }
+}
+
+@media screen and (max-width: 369px) {
+    .clearance .btn {
+        width: 90%;
+        font-size: 10px;
+        padding: 6px;
     }
 }
 
@@ -1734,7 +1752,7 @@ span.phone {
 
     .f-menu .social a {
         float: left;
-        margin: 9px 4px 0 0;
+        margin: 9px 3px 0 0;
     }
 
 }
@@ -1798,7 +1816,7 @@ span.phone {
 }
 
 .f-bottom .col-xs-2 {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .f-bottom .col-xs-2 span.brand,
@@ -1823,12 +1841,16 @@ span.phone {
         padding-left: 10px;
     }
 
+    .f-bottom .navbar-default li a:first-child {
+        padding-left: 0;
+    }
 }
 
 /* @media to 767px */
 @media screen and (max-width: 767px) {
     .f-bottom .col-xs-2 {
         padding-left: 0;
+        padding-right: 0;
     }
 
     .f-bottom .navbar-toggle {
@@ -1851,7 +1873,7 @@ span.phone {
 
     .f-bottom .col-xs-2 span.brand,
     .f-bottom .col-xs-2 span.rights {
-        font-size: 24px;
+        font-size: 17px;
     }
 
     .f-bottom .navbar-toggle .icon-bar {
