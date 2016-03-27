@@ -139,7 +139,12 @@ span.phone {
 		padding-right: 0;
 		font-size: 28px;
 		text-align: center;
+        background-color: #ffffff;
 	}
+
+    .h-top-line .acc {
+        background-color: #000000;
+    }
 
 	.h-top-line .col-xs-6 {
     	width: 100%;
@@ -452,12 +457,15 @@ span.phone {
     .bottom-line .logo {
         margin: 20px auto;
     }
-}
 
-@media screen and (max-width: 380px) {
     .bottom-line .nav-menu .navbar {
         float: left;
-        width: 105%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .bottom-line .nav-menu {
+        padding-right: 0;
     }
 }
 
@@ -727,7 +735,7 @@ span.phone {
 
     .social .social-find {
         margin-right: 32px;
-        font-size: 22px;
+        font-size: 21px;
     }
 
     .social .social-networks img {
@@ -739,11 +747,15 @@ span.phone {
 /* @media from 320px to 460 */
 @media screen and (max-width: 460px) {
     .social-networks .social-wrap span {
+        text-align: left;
+    }
+
+    .social-networks .social-wrap span {
         margin-right: 2px;
     }
     .social-networks .social-wrap img {
-        width: 40px;
-        height: 40px;
+        width: 48px;
+        height: 48px;
     }
 
     .social .social-hidden .input-group input {
@@ -763,13 +775,12 @@ span.phone {
     .social .input-group .form-control {
         font-size: 22px;
     }
-}
 
-@media screen and (max-width: 320px) {
-    .social-networks .social-wrap span {
-        margin-right: 28px;
+    .social .social-networks .social-wrap {
+        text-align: left;
     }
 }
+
 
 
 /*-----------------------------------------------------------------------*/
@@ -2050,7 +2061,7 @@ span.phone {
     }
 }
 
-/* @media to 767px */
+/* @media to 768px */
 @media screen and (max-width: 767px) {
     .f-bottom .col-xs-2 {
         padding-left: 0;
