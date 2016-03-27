@@ -926,6 +926,16 @@ span.phone {
     left: -18.88888%;
 }
 
+.body-carousel .carousel-inner > .item.next,
+.body-carousel .carousel-inner > .item.active.right {
+    -webkit-transform: translate3d(18.88888%, 0, 0);
+}
+
+.body-carousel .carousel-inner > .item.prev,
+.body-carousel .carousel-inner > .item.active.left {
+    -webkit-transform: translate3d(-18.88888%, 0, 0);
+}
+
 .body-carousel .carousel-inner {
     background-color: #fd926d;
 }
@@ -1156,6 +1166,16 @@ span.phone {
         left: -19.888888%;
     }
 
+    .body-carousel .carousel-inner > .item.next,
+    .body-carousel .carousel-inner > .item.active.right {
+        -webkit-transform: translate3d(19.888888%, 0, 0);
+    }
+
+    .body-carousel .carousel-inner > .item.prev,
+    .body-carousel .carousel-inner > .item.active.left {
+        -webkit-transform: translate3d(-19.888888%, 0, 0);
+    }
+
     .body-carousel .carousel-inner > .item > .col-xs-2:first-child {
         margin-left: -177px;
     }
@@ -1183,6 +1203,16 @@ span.phone {
         left: -20.222222%;
     }
 
+    .body-carousel .carousel-inner > .item.next,
+    .body-carousel .carousel-inner > .item.active.right {
+        -webkit-transform: translate3d(20.222222%, 0, 0);
+    }
+
+    .body-carousel .carousel-inner > .item.prev,
+    .body-carousel .carousel-inner > .item.active.left {
+        -webkit-transform: translate3d(-20.222222%, 0, 0);
+    }
+
     .body-carousel .carousel-inner > .item > .col-xs-2:first-child {
         margin-left: -163px;
     }
@@ -1194,44 +1224,12 @@ span.phone {
 }
 
 @media screen and (max-width: 1366px) {
-    .body-carousel .carousel-inner .active.left {
-        left: -20.222222%;
-    }
-
-    .body-carousel .carousel-inner .active.right {
-        left: 20.222222%;
-    }
-
-    .body-carousel .carousel-inner .next {
-        left: 20.222222%;
-    }
-
-    .body-carousel .carousel-inner .prev {
-        left: -20.222222%;
-    }
-
     .body-carousel .carousel-inner > .item > .col-xs-2:first-child {
         margin-left: -149px;
     }
 }
 
 @media screen and (max-width: 1280px) {
-    .body-carousel .carousel-inner .active.left {
-        left: -20.222222%;
-    }
-
-    .body-carousel .carousel-inner .active.right {
-        left: 20.222222%;
-    }
-
-    .body-carousel .carousel-inner .next {
-        left: 20.222222%;
-    }
-
-    .body-carousel .carousel-inner .prev {
-        left: -20.222222%;
-    }
-
     .body-carousel .carousel-inner > .item > .col-xs-2:first-child {
         margin-left: -130px;
     }
@@ -1252,6 +1250,16 @@ span.phone {
 
     .body-carousel .carousel-inner .prev {
         left: -20.666666%;
+    }
+
+    .body-carousel .carousel-inner > .item.next,
+    .body-carousel .carousel-inner > .item.active.right {
+        -webkit-transform: translate3d(20.666666%, 0, 0);
+    }
+
+    .body-carousel .carousel-inner > .item.prev,
+    .body-carousel .carousel-inner > .item.active.left {
+        -webkit-transform: translate3d(-20.666666%, 0, 0);
     }
 
     .body-carousel .carousel-inner > .item > .col-xs-2:first-child {
@@ -1318,6 +1326,16 @@ span.phone {
 
     .body-carousel .carousel-inner .prev {
         left: -33.33333%;
+    }
+
+    .body-carousel .carousel-inner > .item.next,
+    .body-carousel .carousel-inner > .item.active.right {
+        -webkit-transform: translate3d(33.33333%, 0, 0);
+    }
+
+    .body-carousel .carousel-inner > .item.prev,
+    .body-carousel .carousel-inner > .item.active.left {
+        -webkit-transform: translate3d(-33.33333%, 0, 0);
     }
 
     .body-carousel .carousel-inner .item .hidden-768 {
@@ -1418,6 +1436,16 @@ span.phone {
 
     .body-carousel .carousel-inner .prev {
         left: -100%;
+    }
+
+    .body-carousel .carousel-inner > .item.next,
+    .body-carousel .carousel-inner > .item.active.right {
+        -webkit-transform: translate3d(100%, 0, 0);
+    }
+
+    .body-carousel .carousel-inner > .item.prev,
+    .body-carousel .carousel-inner > .item.active.left {
+        -webkit-transform: translate3d(-100%, 0, 0);
     }
 
     .body-carousel .carousel-inner .item .hidden-320 {
