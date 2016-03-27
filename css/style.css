@@ -310,10 +310,15 @@ span.phone {
 
 /* @media 991px to 1199px */
 @media screen and (min-width: 991px) and (max-width: 1199px) {
-	.bottom-line {
+	.bottom-line,
+    .h-top-line {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+
+    .bottom-line .cart.col-md-3 {
+        width: 33.3333%;
+    }
 
 	.bottom-line .table {
 		width: 91%;
