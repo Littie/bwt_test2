@@ -2005,7 +2005,7 @@ span.phone {
 }
 
 .f-bottom .navbar-default {
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 0;
     background-color: #000;
     border: 0;
@@ -2031,7 +2031,7 @@ span.phone {
 }
 
 .f-bottom .col-xs-2 {
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .f-bottom .col-xs-2 span.brand,
@@ -2089,6 +2089,14 @@ span.phone {
 
     .f-bottom .navbar-default li a {
         font-size: 14px;
+    }
+
+    .f-bottom .navbar-default {
+        margin-top: 15px;
+    }
+
+    .f-bottom .col-xs-2 {
+        margin-top: 25px;
     }
 }
 
