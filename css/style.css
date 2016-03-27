@@ -2077,6 +2077,19 @@ span.phone {
     .f-bottom .navbar-default li a:after {
         content: "";
     }
+
+    .f-bottom .navbar-collapse {
+        width: 127%;
+        position: absolute;
+        left: -14px;
+        top: 56px;
+        padding-left: 5px;
+        background-color: #000000;
+    }
+
+    .f-bottom .navbar-default li a {
+        font-size: 14px;
+    }
 }
 
 /* @media to 639px */
@@ -2111,6 +2124,11 @@ span.phone {
 
     .f-bottom .navbar-toggle {
         padding: 15px 20px;
+    }
+
+    .f-bottom .navbar-collapse {
+        width: 220%;
+        top: 85px;
     }
 }
 /*-----------------------------------------------------------------------*/
