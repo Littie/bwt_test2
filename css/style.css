@@ -956,7 +956,6 @@ span.phone {
 /*-----------------------------------------------*/
 .body-carousel .carousel-inner .item .item-box {
 	text-align: center;
-	opacity: 1;
 	-webkit-transform: scale(1,1);
 	-webkit-transition-timing-function: ease-out;
 	-webkit-transition-duration: 550ms;
